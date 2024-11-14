@@ -69,3 +69,34 @@ O modelo lógico de banco de dados transforma o projeto conceitual em um formato
 
 ```
 Diagrama de classes
+## Modelo fisico
+O modelo físico de banco de dados detalha a implementação final do banco no SGBD, incluindo estruturas específicas de armazenamento, índices, partições e otimizações de desempenho. Esse modelo traduz o modelo lógico em comandos SQL para criar tabelas, chaves, restrições e outras configurações físicas, considerando aspectos como espaço em disco e tempo de resposta. É a última fase antes do uso do banco em ambiente de produção.
+```
+    CLIENTE {
+        id_cliente int PK
+        nome char(90) NOT NULL
+        data_nascimento date NOT NULL
+        cpf char(12) NOT NULL
+        email char (50) NOT NULL
+        telefone char(12) NULL
+    }
+
+    CURSO {
+        id_curso int PK
+        nome char(90) NOT NULL
+        descricao char(120) NOT NULL
+        carga_horaria int NOT NULL
+    }
+
+    INSCRICAO {
+        id_inscricao int PK
+        id_cliente int FK NOT NULL
+        id_curso int FK NOT NULL
+        data_inscricao date NOT NULL
+        data_cancelamento date NULL
+    }
+
+    CLIENTE ||--o{ INSCRICAO : "faz"
+    CURSO ||--o{ INSCRICAO : "tem"
+
+```
