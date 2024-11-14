@@ -100,3 +100,32 @@ O modelo físico de banco de dados detalha a implementação final do banco no S
     CURSO ||--o{ INSCRICAO : "tem"
 
 ```
+Diagrama fisico do banco de dados da escola.
+```
+CREATE TABLE CLIENTE (
+    id_cliente SERIAL PRIMARY KEY,
+    nome CHAR(90) NOT NULL,
+    data_nascimento DATE NOT NULL,
+    cpf CHAR(12) NOT NULL,
+    email CHAR(50) NOT NULL,
+    telefone CHAR(12)
+);
+
+CREATE TABLE CURSO (
+    id_curso SERIAL PRIMARY KEY,
+    nome CHAR(90) NOT NULL,
+    descricao CHAR(120) NOT NULL,
+    carga_horaria INT NOT NULL
+);
+
+CREATE TABLE INSCRICAO (
+    id_inscricao SERIAL PRIMARY KEY,
+    id_cliente INT NOT NULL,
+    id_curso INT NOT NULL,
+    data_inscricao DATE NOT NULL,
+    data_cancelamento DATE,
+    FOREIGN KEY (id_cliente) REFERENCES CLIENTE (id_cliente),
+    FOREIGN KEY (id_curso) REFERENCES CURSO (id_curso)
+);
+```
+Codigo em SQL para o PostgreSQL
