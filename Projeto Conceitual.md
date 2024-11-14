@@ -61,5 +61,5 @@
 
 ```
 Diagrama de classes
-
+![Diagrama UML](https://github.com/Leorehin/estudosSQL/blob/main/diagrama%20UML.JPG)
 Diagrama UML
