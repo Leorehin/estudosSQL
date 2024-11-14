@@ -27,6 +27,9 @@
   informações essenciais e suas relações, esse modelo usa diagramas entidade-relacionamento (ER) para identificar entidades, atributos e relacionamentos. Ele serve como uma base inicial para a 
   criação de um banco de dados, garantindo organização e consistência lógica antes de se avançar para o projeto lógico e físico.
   ### No nosso projeto
+
+![Diagrama DER](diagrama DER.JPG)
+  
   ```
   erDiagram
     CLIENTE {
