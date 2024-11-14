@@ -30,6 +30,14 @@
 
 ![diagrama DER.JPG](https://github.com/Leorehin/estudosSQL/blob/main/diagrama%20DER.JPG)
   Diagrama ER
+
+![Diagrama UML](https://github.com/Leorehin/estudosSQL/blob/main/diagrama%20UML.JPG)
+Diagrama UML
+
+## Modelo logico
+O modelo lógico de banco de dados transforma o projeto conceitual em um formato compatível com o SGBD escolhido. Ele define tabelas, colunas, tipos de dados, chaves primárias e estrangeiras, visando a estruturação eficiente dos dados e a integridade referencial. É a etapa intermediária entre o modelo conceitual e o modelo físico, alinhando o design do banco com os requisitos específicos do sistema.
+
+### No nosso projeto
   ```
   erDiagram
     CLIENTE {
@@ -61,5 +69,3 @@
 
 ```
 Diagrama de classes
-![Diagrama UML](https://github.com/Leorehin/estudosSQL/blob/main/diagrama%20UML.JPG)
-Diagrama UML
