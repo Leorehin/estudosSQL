@@ -28,7 +28,7 @@
   criação de um banco de dados, garantindo organização e consistência lógica antes de se avançar para o projeto lógico e físico.
   ### No nosso projeto
 
-![Diagrama DER](diagrama DER.JPG)
+![diagrama DER.JPG](https://github.com/Leorehin/estudosSQL/blob/main/diagrama%20DER.JPG)
   
   ```
   erDiagram
