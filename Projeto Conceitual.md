@@ -29,7 +29,7 @@
   ### No nosso projeto
 
 ![diagrama DER.JPG](https://github.com/Leorehin/estudosSQL/blob/main/diagrama%20DER.JPG)
-  
+  Diagrama ER
   ```
   erDiagram
     CLIENTE {
@@ -60,4 +60,6 @@
     CURSO ||--o{ INSCRICAO : "tem"
 
 ```
+Diagrama de classes
 
+Diagrama UML
